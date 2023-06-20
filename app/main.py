@@ -33,11 +33,11 @@ def get_hotels(
     search_args: HotelSearchArgs = Depends(),
 ) -> list[SHotel]:
     hotels = [
-        SHotel(
-            address='ул. Гагарина, 1, Алтай',
-            name='Super Hotel',
-            stars=5,
-        )
+        {
+            'address': 'ул. Гагарина, 1, Алтай',
+            'name': 'Super Hotel',
+            'stars': 5,
+        }
     ]
     return hotels
 
